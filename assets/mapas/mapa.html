@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Mapa Mental - Curso de Maquiagem</title>
+<style>
+* { margin: 0; padding: 0; }
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap { display: block; width: 100vw; height: 100vh; }
+.markmap-dark { background: #27272a; color: white; }
+</style>
+<link rel="stylesheet" href="../vendor/markmap/markmap-toolbar.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="../vendor/markmap/d3.min.js"></script><script src="../vendor/markmap/markmap-view.js"></script><script src="../vendor/markmap/markmap-toolbar.js"></script>
+<script>(()=>{setTimeout(()=>{const{markmap:S,mm:Q}=window,$=new S.Toolbar;$.attach(Q);const I=$.render();I.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(I)})})()</script>
+<!--
+  MAPA MENTAL — POR CURSO (§4.3b, mudança #6).
+  Substituir o objeto `content` abaixo por um mapa SIMPLES do tema do curso da row:
+  { "content": "<NOME DO CURSO>", "children": [ {"content":"Módulo/Pilar 1","children":[{"content":"tópico"},...]}, ... ] }
+  Mesma estrutura markmap; manter os <script> vendor acima. Não colar UTM/xcod no nome do arquivo.
+  O placeholder abaixo é genérico só pra não quebrar; a página real deve trazer o mapa do curso.
+-->
+<script>((l,U,M,R)=>{const N=l();window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M),window.matchMedia("(prefers-color-scheme: dark)").matches&&document.documentElement.classList.add("markmap-dark")})(()=>window.markmap,null,{"content":"Curso de Maquiagem Profissional","children":[{"content":"Fundamentos","children":[{"content":"Preparação de pele"},{"content":"Colorimetria"},{"content":"Ferramentas e pincéis"}]},{"content":"Técnicas","children":[{"content":"Esfumado e contorno"},{"content":"Correção e camuflagem"},{"content":"Aplicação de cílios"}]},{"content":"Especializações","children":[{"content":"Maquiagem para noivas"},{"content":"Maquiagem social"},{"content":"Automaquiagem"}]},{"content":"Carreira","children":[{"content":"Portfólio profissional"},{"content":"Precificação"},{"content":"Certificação reconhecida"}]}]},null)</script>
+</body>
+</html>
